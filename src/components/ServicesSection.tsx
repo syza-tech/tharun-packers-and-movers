@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Home, Building2, MapPin, Quote } from "lucide-react";
-import officeMove from "@/assets/office-move.jpg";
+
 
 const ServicesSection = () => {
   const cities = [
@@ -54,16 +54,6 @@ const ServicesSection = () => {
             </Card>
           </div>
           
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-[--shadow-card]">
-              <img 
-                src={officeMove} 
-                alt="Commercial office relocation services - Tharun Packers & Movers"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
-            </div>
-          </div>
         </div>
         
         <div className="text-center space-y-8">

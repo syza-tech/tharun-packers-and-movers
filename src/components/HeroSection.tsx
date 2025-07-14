@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
-import heroTruck from "@/assets/hero-truck.jpg";
+
 
 const HeroSection = () => {
   const handleCall = () => {
@@ -51,16 +51,6 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-[--shadow-card]">
-              <img 
-                src={heroTruck} 
-                alt="Professional moving truck - Tharun Packers & Movers Chennai"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

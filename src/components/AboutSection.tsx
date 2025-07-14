@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Truck, Users } from "lucide-react";
-import packingTeam from "@/assets/packing-team.jpg";
+
 
 const AboutSection = () => {
   return (
@@ -57,16 +57,6 @@ const AboutSection = () => {
             </div>
           </div>
           
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-[--shadow-card]">
-              <img 
-                src={packingTeam} 
-                alt="Professional packing team in action - Tharun Packers & Movers"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

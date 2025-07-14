@@ -4,20 +4,12 @@ import { Phone, MapPin, Heart } from "lucide-react";
 const Footer = () => {
   const galleryImages = [
     {
-      src: "/api/placeholder/300/200",
+      src: "/lovable-uploads/0b5513b0-20c3-4d34-8b35-07c8f9d4822d.png",
       alt: "Moving truck loading"
     },
     {
-      src: "/api/placeholder/300/200", 
+      src: "/lovable-uploads/ccb31e49-1cdb-4434-9925-a730155eddb0.png", 
       alt: "Professional packing service"
-    },
-    {
-      src: "/api/placeholder/300/200",
-      alt: "Office relocation"
-    },
-    {
-      src: "/api/placeholder/300/200",
-      alt: "Safe delivery"
     }
   ];
 
@@ -85,6 +77,17 @@ const Footer = () => {
                     />
                   </Card>
                 ))}
+                {/* Empty slots for future photos */}
+                <Card className="overflow-hidden border-primary/20 bg-muted/50">
+                  <div className="w-full h-32 flex items-center justify-center text-muted-foreground text-sm">
+                    More photos coming soon
+                  </div>
+                </Card>
+                <Card className="overflow-hidden border-primary/20 bg-muted/50">
+                  <div className="w-full h-32 flex items-center justify-center text-muted-foreground text-sm">
+                    More photos coming soon
+                  </div>
+                </Card>
               </div>
             </div>
             

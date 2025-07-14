@@ -7,7 +7,7 @@ import {
   Heart,
   CheckCircle 
 } from "lucide-react";
-import businessOwner from "@/assets/business-owner.jpg";
+
 
 const WhyChooseSection = () => {
   const features = [
@@ -51,24 +51,6 @@ const WhyChooseSection = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative order-2 lg:order-1">
-            <div className="relative overflow-hidden rounded-2xl shadow-[--shadow-card]">
-              <img 
-                src={businessOwner} 
-                alt="Tharun - Owner of Tharun Packers & Movers Chennai"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <Card className="p-4 bg-background/95 backdrop-blur-sm border-trust-blue-light">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-success-green" />
-                    <p className="font-semibold text-text-primary">Tharun - Your Trusted Partner</p>
-                  </div>
-                </Card>
-              </div>
-            </div>
-          </div>
           
           <div className="space-y-8 order-1 lg:order-2">
             <div className="grid grid-cols-1 gap-6">
