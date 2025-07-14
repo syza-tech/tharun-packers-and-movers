@@ -12,69 +12,98 @@ import {
 const WhyChooseSection = () => {
   const features = [
     {
-      icon: Award,
+      icon: "🏆",
       title: "10+ Years Experience",
-      description: "Decade of trusted service in Chennai"
+      description: "Over a decade of trusted moving services in Chennai and South India"
     },
     {
-      icon: Shield,
+      icon: "✅", 
       title: "Verified on Justdial",
-      description: "Authentic business with verified reviews"
+      description: "Officially verified business with genuine customer reviews and ratings"
     },
     {
-      icon: Truck,
-      title: "Own Vehicles",
-      description: "Well-maintained fleet for reliable transport"
+      icon: "🚛",
+      title: "Own Vehicle Fleet",
+      description: "Well-maintained trucks and professional moving equipment"
     },
     {
-      icon: Package,
-      title: "Careful Packing Materials",
-      description: "High-quality materials for item protection"
+      icon: "📦",
+      title: "Premium Packing Materials", 
+      description: "High-quality bubble wrap, boxes, and protective materials"
     },
     {
-      icon: Heart,
-      title: "Friendly & Trained Team",
-      description: "Professional staff committed to excellence"
+      icon: "👥",
+      title: "Trained Professional Team",
+      description: "Skilled movers who handle your belongings with utmost care"
+    },
+    {
+      icon: "🛡️",
+      title: "Safe & Secure",
+      description: "Comprehensive safety measures and insurance coverage options"
     }
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-b from-section-bg to-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-text-primary">
-            Why Choose <span className="text-primary">Tharun Packers & Movers</span>
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Experience the difference of working with Chennai's most trusted movers
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="section-padding bg-gradient-to-b from-background to-section-bg relative">
+      <div className="section-divider"></div>
+      
+      <div className="container-spacing">
+        <div className="max-w-7xl mx-auto">
           
-          <div className="space-y-8 order-1 lg:order-2">
-            <div className="grid grid-cols-1 gap-6">
-              {features.map((feature, index) => (
-                <Card 
-                  key={index} 
-                  className="p-6 bg-card border-trust-blue-light hover:shadow-[--shadow-card] transition-[--transition-smooth] group"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-trust-blue-light rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-[--transition-smooth]">
-                      <feature.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-bold text-text-primary flex items-center">
-                        <CheckCircle className="h-5 w-5 text-success-green mr-2" />
-                        {feature.title}
-                      </h3>
-                      <p className="text-text-secondary">{feature.description}</p>
-                    </div>
+          {/* Section Header */}
+          <div className="text-center mb-20 animate-fade-in">
+            <h2 className="text-4xl lg:text-5xl font-black text-text-primary mb-8 tracking-tight">
+              Why Choose <span className="text-gradient">Tharun Packers & Movers</span>
+            </h2>
+            <p className="text-xl lg:text-2xl text-text-secondary leading-relaxed max-w-3xl mx-auto font-medium">
+              We stand out with our commitment to excellence, reliability, and customer satisfaction
+            </p>
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="group p-8 bg-card shadow-[--shadow-card] card-interactive border border-border rounded-2xl animate-scale-in hover:bg-gradient-to-br hover:from-card hover:to-primary/5">
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {feature.icon}
                   </div>
-                </Card>
-              ))}
+                  <div>
+                    <h3 className="text-xl font-bold text-text-primary mb-4 group-hover:text-primary transition-colors">
+                      {feature.title}
+                    </h3>
+                    <p className="text-text-secondary leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-20 bg-gradient-to-r from-primary/5 to-trust-blue/5 rounded-3xl p-10 border border-primary/20 animate-fade-in">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="space-y-4">
+                <div className="text-4xl font-black text-primary">10+</div>
+                <div className="text-lg font-semibold text-text-primary">Years of Excellence</div>
+                <div className="text-text-secondary">Serving Chennai since 2012</div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="text-4xl font-black text-success-green">1000+</div>
+                <div className="text-lg font-semibold text-text-primary">Happy Customers</div>
+                <div className="text-text-secondary">Successful relocations completed</div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="text-4xl font-black text-trust-blue">24/7</div>
+                <div className="text-lg font-semibold text-text-primary">Available Support</div>
+                <div className="text-text-secondary">Round-the-clock assistance</div>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
