@@ -17,9 +17,14 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-text-primary leading-tight">
-                Trusted <span className="text-primary">Packers & Movers</span> in Chennai
-              </h1>
+              <div className="space-y-2">
+                <h1 className="text-2xl lg:text-3xl font-bold text-primary">
+                  THARUN PACKERS & MOVERS
+                </h1>
+                <h2 className="text-3xl lg:text-5xl font-bold text-text-primary leading-tight">
+                  Trusted <span className="text-primary">Relocation Services</span> in Chennai
+                </h2>
+              </div>
               <p className="text-lg text-text-primary font-medium">Since 2012</p>
               <p className="text-xl text-text-secondary leading-relaxed max-w-2xl">
                 Safe, professional house shifting and relocation services you can count on.

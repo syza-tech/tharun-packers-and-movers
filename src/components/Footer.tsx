@@ -10,6 +10,14 @@ const Footer = () => {
     {
       src: "/lovable-uploads/ccb31e49-1cdb-4434-9925-a730155eddb0.png", 
       alt: "Professional packing service"
+    },
+    {
+      src: "/lovable-uploads/220555c7-c481-4b6f-9b95-5c3b00a66f53.png",
+      alt: "Tharun Transport business banner"
+    },
+    {
+      src: "/lovable-uploads/6d5bdb66-1207-466c-9ab6-84db85ef74c5.png",
+      alt: "Professional packing materials"
     }
   ];
 
@@ -77,17 +85,6 @@ const Footer = () => {
                     />
                   </Card>
                 ))}
-                {/* Empty slots for future photos */}
-                <Card className="overflow-hidden border-primary/20 bg-muted/50">
-                  <div className="w-full h-32 flex items-center justify-center text-muted-foreground text-sm">
-                    More photos coming soon
-                  </div>
-                </Card>
-                <Card className="overflow-hidden border-primary/20 bg-muted/50">
-                  <div className="w-full h-32 flex items-center justify-center text-muted-foreground text-sm">
-                    More photos coming soon
-                  </div>
-                </Card>
               </div>
             </div>
             
